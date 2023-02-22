@@ -1,0 +1,112 @@
+body {
+  overflow-y: hidden;
+  background: linear-gradient(to bottom right, #020202, #090909, #0d0d0d, #111111, #181818);
+}
+
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  bottom: 15px;
+  background: #f7f7f7;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px 50px 25px 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #292b2c;
+  font-size: 26px;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #1b1e23;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+  opacity: 0.6;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #1b1e23;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #999999;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button :enabled {
+  color: #000000;
+}
+
+
+.info{
+  text-align: center;
+  padding-bottom: 25px;
+}

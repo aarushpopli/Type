@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.type {
+	display: inline-block;
+    margin-left: 27%;
+}
+
+.name {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 10px;
+ 	animation: typing 3s steps(4, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 200px;
+    font-weight: 700;
+    border-right: 10px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+@media screen and (max-width: 900px){
+    .name{
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .name{
+        font-size: 50px;
+    }
+}
